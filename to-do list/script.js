@@ -24,3 +24,9 @@ function deleteTask(btn) {
 function toggleTask(text) {
     text.parentElement.classList.toggle("completed");
 }
+
+function handleEnter(event) {
+    if (event.key === "Enter") {
+        addTask();
+    }
+}
